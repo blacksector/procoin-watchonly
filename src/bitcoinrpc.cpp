@@ -3240,8 +3240,35 @@ void ConvertTo(Value& value)
 // Convert strings to command-specific RPC representation
 Array RPCConvertValues(const std::string &strMethod, const std::vector<std::string> &strParams)
 {
+    // delete all ' symbols
+    int countOfBrackets = 0;
+    std::vector<std::string> newParams;// = new std::vector<std::string>();
+    for( std::vector<int>::size_type index = 0 ; index != strParams.size() ; index++ ) 
+    {   
+        std::string tmp = "";
+        for( unsigned int i = 0 ; i < strParams[index].size() ; i++ )
+        {
+            if ( strParams[index][i] != '\'' )
+            {
+                tmp += strParams[index][i];
+            }
+            else
+            {
+                countOfBrackets++;
+            }
+        }
+
+        if(countOfBrackets % 2 != 0)
+        {
+            throw runtime_error("Parse error: unbalanced ' or \".");
+        }
+        
+        newParams.push_back(tmp);
+    }
+
+
     Array params;
-    BOOST_FOREACH(const std::string &param, strParams)
+    BOOST_FOREACH(const std::string &param, newParams)
         params.push_back(param);
 
     int n = params.size();
