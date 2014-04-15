@@ -2,8 +2,8 @@ ProCoin (PCN) is now on version 1.2
 
 Installation. Sample ProCoin.conf
 
-rpcuser=procoinrpc
-rpcpassword=yourpassword
+rpcuser=procoinrpc<br />
+rpcpassword=yourpassword<br />
 rpcallowip=localhost
 listen=1
 gen=0
