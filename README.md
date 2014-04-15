@@ -1,6 +1,6 @@
 <b>ProCoin (PCN)</b> is now on version 1.2. Wallet Version is 0.6.3.0. This current branch contains the newest release.</br>
 
-<b>Installation. Sample ProCoin.conf</b>
+<b>Installation. Sample ProCoin.conf</b> - to run a public node just change rpcallowip=* to allow any client to connect.
 
 rpcuser=procoinrpc<br />
 rpcpassword=yourpassword<br />
