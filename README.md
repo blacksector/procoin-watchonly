@@ -1,6 +1,6 @@
-ProCoin (PCN) is now on version 1.2. Wallet Version is 0.6.3.0. This current branch contains the newest release.</br>
+<b>ProCoin (PCN)</b> is now on version 1.2. Wallet Version is 0.6.3.0. This current branch contains the newest release.</br>
 
-</h3>Installation. Sample ProCoin.conf</h3>
+<b>Installation. Sample ProCoin.conf</b>
 
 rpcuser=procoinrpc<br />
 rpcpassword=yourpassword<br />
