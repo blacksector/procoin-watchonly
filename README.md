@@ -2,6 +2,8 @@
 
 <b>Installation. Sample ProCoin.conf</b> - to run a public node just change rpcallowip=* to allow any client to connect.
 
+<br /><b>Clone the source:</b> git clone https://github.com/getprocoin/Source procoin<br />
+
 rpcuser=procoinrpc<br />
 rpcpassword=yourpassword<br />
 rpcallowip=localhost<br />
